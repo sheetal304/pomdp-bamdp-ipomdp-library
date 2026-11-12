@@ -1,0 +1,26 @@
+IPOMDP DEMO - agent i reasons about another agent j
+
+True type of j = hasty, tiger is LEFT
+ round        j did   P(j careful)  P(tiger-left)
+     1       listen          0.500          0.150
+     2   open-right          0.000          0.850
+     3         done          0.000          0.500
+     4         done          0.000          0.850
+     5         done          0.000          0.970
+     6         done          0.000          0.995
+
+True type of j = careful, tiger is LEFT
+ round        j did   P(j careful)  P(tiger-left)
+     1       listen          0.500          0.150
+     2       listen          1.000          0.030
+     3       listen          1.000          0.150
+     4   open-right          1.000          0.995
+     5         done          1.000          0.999
+     6         done          1.000          1.000
+
+Does watching j help? (2000 random trials, avg probability given to the TRUE state)
+ rounds   watching j   ignoring j
+      2       0.8722       0.8422
+      3       0.9187       0.9036
+      4       0.9634       0.9316
+      6       0.9884       0.9696

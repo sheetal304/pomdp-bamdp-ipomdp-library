@@ -1,0 +1,12 @@
+BAMDP DEMO - agent learns the sensor accuracy (true value = 0.85)
+ episode  learned accuracy   uncertainty (std)
+       1             0.800               0.163
+       5             0.824               0.090
+      10             0.781               0.072
+      20             0.790               0.051
+      50             0.757               0.035
+     100             0.811               0.022
+
+Listens needed before opening a door:
+  agent that knows nothing (prior Beta(1,1)): 55
+  agent after learning for 100 episodes:      2

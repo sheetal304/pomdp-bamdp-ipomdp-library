@@ -1,0 +1,14 @@
+POMDP DEMO - Tiger problem (sensor accuracy 85%)
+step                   P(tiger-left)  P(tiger-right)   best action
+start                         0.5000          0.5000   listen
+listen -> hear-left           0.8500          0.1500   listen
+listen -> hear-left           0.9698          0.0302   open-right
+listen -> hear-left           0.9945          0.0055   open-right
+
+Simulated episode (seed=0, true state = tiger-left):
+  step 1: action=listen      reward=   -1
+          heard hear-left, belief P(left)=0.850
+  step 2: action=listen      reward=   -1
+          heard hear-left, belief P(left)=0.970
+  step 3: action=open-right  reward=   10
+  total reward: 8
